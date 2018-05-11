@@ -1,0 +1,53 @@
+.navLinkContainer {
+  padding: 20px 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  max-width: 250px;
+  background: linear-gradient(#f1f1f1 , #fff);
+  transition: all 350ms ease-in;
+}
+
+.shrinkContainer {
+  max-width: 45px;
+}
+
+.navLink {
+  margin: 20px 0;
+}
+
+.navLink a:hover {
+  color: #999;
+}
+
+.navLink a {
+  text-decoration: none;
+  color: #333;
+  margin: 20px 10px;
+}
+
+.navTextShow {
+  opacity: 1;
+  position: relative;
+  left: 12px;
+  top: 2px;
+  transition: opacity 350ms 100ms ease-in;
+  padding-right: 10px;
+
+}
+
+.navTextHide {
+  opacity: 0;
+}
+
+.expandNav {
+  order: -1;
+  display: none;
+  margin: 20px 10px 40px 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .expandNav {
+    display: block;
+  }
+}
