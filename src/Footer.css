@@ -14,8 +14,12 @@
   color: #999;
 }
 
+.tooltipLink {
+  color: #fff;
+  margin: 0;
+}
+
 .appFooter {
-  min-height: 55px;
   border-top: 1px solid #f1f1f1;
   background-color: #fff;
 }

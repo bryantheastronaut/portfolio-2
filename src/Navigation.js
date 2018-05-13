@@ -6,6 +6,7 @@ import DesignIcon from 'react-icons/lib/go/paintcan';
 import MediumIcon from 'react-icons/lib/fa/medium';
 import ExpandIcon from 'react-icons/lib/fa/angle-left';
 import CollapseIcon from 'react-icons/lib/fa/angle-right';
+import NavLink from './NavLink';
 import './Navigation.css';
 
 class Navigation extends Component {
@@ -45,9 +46,24 @@ class Navigation extends Component {
     const textClass = expanded ? 'navTextShow' : 'navTextHide';
     return (
       <div className={`navLinkContainer ${!expanded ? 'shrinkContainer' : ''}`}>
-        <span className="navLink"><Link to="/"><AboutMeIcon size={26} /><span className={textClass}>About me</span></Link></span>
-        <span className="navLink"><Link to="/design"><DesignIcon size={26} /><span className={textClass}>Design</span></Link></span>
-        <span className="navLink"><Link to="/dev"><DevIcon size={26} /><span className={textClass}>Development</span></Link></span>
+        <NavLink>
+          <Link to="/">
+            <AboutMeIcon size={26} />
+            <span className={textClass}>About me</span>
+          </Link>
+        </NavLink>
+        <NavLink>
+          <Link to="/design">
+            <DesignIcon size={26} />
+            <span className={textClass}>Design</span>
+          </Link>
+        </NavLink>
+        <NavLink>
+          <Link to="/dev">
+            <DevIcon size={26} />
+            <span className={textClass}>Development</span>
+          </Link>
+        </NavLink>
         <span className="navLink">
           <a
             target="_blank"

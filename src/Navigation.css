@@ -13,7 +13,10 @@
 }
 
 .navLink {
-  margin: 20px 0;
+  margin: 30px 0;
+  /* display: flex;
+  flex-flow: row nowrap; */
+  white-space: nowrap;
 }
 
 .navLink a:hover {
@@ -24,6 +27,7 @@
   text-decoration: none;
   color: #333;
   margin: 20px 10px;
+  padding-right: 10px;
 }
 
 .navTextShow {
@@ -38,6 +42,7 @@
 
 .navTextHide {
   opacity: 0;
+  white-space: nowrap;
 }
 
 .expandNav {
