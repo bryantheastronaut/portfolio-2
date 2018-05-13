@@ -1,0 +1,75 @@
+.contentContainer {
+  padding: 20px;
+  min-height: 100%;
+  overflow: auto !important;
+  box-sizing: border-box;
+  padding-bottom: 35px;
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  flex-flow: column nowrap;
+}
+
+.title {
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  opacity: 0.25;
+  font-weight: 300 !important;
+  margin-top: 0;
+}
+
+.subtitle:hover {
+  opacity: 1.00;
+}
+
+ul {
+  list-style: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+li {
+  padding: 10px 0;
+  width: 100%;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+
+.aboutMeList {
+  line-height: 1.75em;
+  align-self: flex-start;
+}
+
+.photoContainer {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.photo {
+  width: 100%;
+  max-width: 250px;
+  opacity: 0.80;
+  border-radius: 10px;
+}
+
+.contentGrid {
+  text-align: center;
+}
+
+.singleItem {
+  margin: 10px;
+}
+
+.screenshot {
+  width: 100%;
+}

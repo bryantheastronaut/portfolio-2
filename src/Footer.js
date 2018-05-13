@@ -1,9 +1,10 @@
 import React from 'react';
 import Tooltip from 'rc-tooltip';
 import EmailIcon from 'react-icons/lib/ti/mail';
+import GithubIcon from 'react-icons/lib/go/mark-github';
 import TwitterIcon from 'react-icons/lib/ti/social-twitter';
 import 'rc-tooltip/assets/bootstrap.css';
-import './Footer.css';
+import './styles/Footer.css';
 
 const email = (
   <a
@@ -19,9 +20,24 @@ const twitter = (
     rel="noopener noreferrer"
   >@spacebrayn</a>
 );
+const github = (
+  <a
+    className="tooltipLink"
+    target="_blank"
+    href="https://github.com/bryantheastronaut"
+    rel="noopener noreferrer"
+  >bryantheastronaut</a>
+);
 
 const Footer = () => (
   <div className="footerContainer">
+    <Tooltip
+      placement="top"
+      overlay={github}
+      trigger={['click']}
+    >
+      <GithubIcon className="footerIcon" size={28} />
+    </Tooltip>
     <Tooltip
       placement="top"
       overlay={email}

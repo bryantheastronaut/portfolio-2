@@ -3,9 +3,12 @@
   display: flex;
   flex-flow: column nowrap;
   height: 100%;
+  min-height: 100vh;
   max-width: 250px;
   background: linear-gradient(#f1f1f1 , #fff);
   transition: all 350ms ease-in;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
 }
 
 .shrinkContainer {
@@ -14,13 +17,11 @@
 
 .navLink {
   margin: 30px 0;
-  /* display: flex;
-  flex-flow: row nowrap; */
   white-space: nowrap;
 }
 
 .navLink a:hover {
-  color: #999;
+  color: #FF4136;
 }
 
 .navLink a {

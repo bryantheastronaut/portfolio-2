@@ -2,6 +2,7 @@
   "name": "bgilbraith-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://bryantheastronaut.github.io",
   "dependencies": {
     "eslint": "^4.9.0",
     "eslint-plugin-import": "^2.7.0",

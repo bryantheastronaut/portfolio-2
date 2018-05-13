@@ -11,7 +11,7 @@
 }
 
 .footerIcon:hover {
-  color: #999;
+  color: #FF4136;
 }
 
 .tooltipLink {
@@ -20,6 +20,5 @@
 }
 
 .appFooter {
-  border-top: 1px solid #f1f1f1;
   background-color: #fff;
 }

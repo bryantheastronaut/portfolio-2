@@ -7,7 +7,7 @@ import MediumIcon from 'react-icons/lib/fa/medium';
 import ExpandIcon from 'react-icons/lib/fa/angle-left';
 import CollapseIcon from 'react-icons/lib/fa/angle-right';
 import NavLink from './NavLink';
-import './Navigation.css';
+import './styles/Navigation.css';
 
 class Navigation extends Component {
   constructor() {
@@ -41,30 +41,36 @@ class Navigation extends Component {
     this.setState({ expanded });
   }
 
+  shrinkSidebar = () => {
+    if (window.innerWidth <= 768) {
+      this.setState({ expanded: false });
+    }
+  }
+
   render() {
     const { expanded } = this.state;
     const textClass = expanded ? 'navTextShow' : 'navTextHide';
     return (
       <div className={`navLinkContainer ${!expanded ? 'shrinkContainer' : ''}`}>
         <NavLink>
-          <Link to="/">
+          <Link to="/" onClick={this.shrinkSidebar}>
             <AboutMeIcon size={26} />
             <span className={textClass}>About me</span>
           </Link>
         </NavLink>
         <NavLink>
-          <Link to="/design">
+          <Link to="/design" onClick={this.shrinkSidebar}>
             <DesignIcon size={26} />
             <span className={textClass}>Design</span>
           </Link>
         </NavLink>
         <NavLink>
-          <Link to="/dev">
+          <Link to="/dev" onClick={this.shrinkSidebar}>
             <DevIcon size={26} />
             <span className={textClass}>Development</span>
           </Link>
         </NavLink>
-        <span className="navLink">
+        <span className="navLink" onClick={this.shrinkSidebar}>
           <a
             target="_blank"
             rel="noopener noreferrer"
