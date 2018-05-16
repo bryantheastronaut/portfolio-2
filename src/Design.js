@@ -30,6 +30,7 @@ class Design extends Component {
               </a>
             </p>
           </div>
+          <div className="spacer" />
           <div className="singleItem">
             <img className="screenshot" src={houston} />
             <p>

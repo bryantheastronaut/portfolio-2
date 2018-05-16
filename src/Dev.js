@@ -22,6 +22,7 @@ const Dev = () => (
           One Minute Cookbook
         </a>
       </div>
+      <div className="spacer" />
       <div className="singleItem">
         <h2>MERN Comment Box Tutorial</h2>
         <img src={mernImg} alt="MERN comment box" className="screenshot" />
@@ -42,6 +43,7 @@ const Dev = () => (
           rel="noopener noreferrer"
         >Source code</a>
       </div>
+      <div className="spacer" />
       <div className="singleItem">
         <h2 className="title">Approved Client Website</h2>
         <img src={approved} alt="Approved Digital Mortgage Platform" className="screenshot" />
